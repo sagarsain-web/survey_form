@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">College campus Survey Form</h1>
+          <p id="description" class="description text-center">
+             Enter your details below:
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name<sub>*</sub></label>
+            <input type="text"name="name"id="name"class="form-control"placeholder="Enter  name"required/>
+          </div>
+          
+          <div class="form-group">
+              <label id="number-label" for="number">Phone No.<sub>*</sub></label>
+            <input type="number"name="number"id="number" min="15" max="30" class="form-control"placeholder="Enter your Address"required/>
+          </div>
+          <div class="form-group">
+            <label id="city-label" for="city">City<sub>*</sub></label>
+          <input type="text"name="city"id="city"size="50"class="form-control"placeholder="Enter your city"required/>
+        </div>
+        <div class="form-group">
+          <label id="state-label" for="state">State<sub>*</sub></label>
+        <input type="text"name="state"id="state"size="35"class="form-control"placeholder="Enter your state"required/>
+      </div>
+          <div class="form-group">
+            <p>Select your country </p>
+            <select id="dropdown" name="role" class="form-control"size="1"required>
+              <option disabled selected value>Select</option>
+              <option value="USA">United States</option>
+              <option value="india">India</option>
+              <option value="canada">canada</option>
+              <option value="england">England</option>
+              <option value="france">France</option>
+              <option value="new zealand">New Zealand</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label id="pin-label" for="pincode">Pin Code<sub>*</sub></label>
+          <input type="text"name="pin code"id="pincode"size="10"maxlength="6"class="form-control"placeholder="Enter your pin code"required/>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email<sub>*</sub></label>
+          <input type="email"name="email"id="email"class="form-control"placeholder="Enter email"required/>
+        </div>
+      
+          <div class="form-group">
+            <p>Please select your Gender!!</p>
+            <label><input name="user-recommend"type="radio"class="input-radio" value="male"checked/>Male</label>
+            <label><input name="user-recommend"type="radio"class="input-radio" value="female"/>Female</label>
+         
+      
+          <div class="form-group">
+            <p>
+              <b>Specifies your interest</b>
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label><input name="prefer"value="sports"type="checkbox"class="input-checkbox"/>Sports</label>
+            <label><input name="prefer"value="Movies"type="checkbox"class="input-checkbox"/>Movies</label>
+            <label><input name="prefer"value="puzzels"type="checkbox"class="input-checkbox"/>Puzzels</label>
+            <label><input name="prefer"value="jogging"type="checkbox"class="input-checkbox"/>Jogging</label>
+            <label><input name="prefer"value="swim"type="checkbox"class="input-checkbox"/>Swimming</label>
+            <label><input name="prefer"value="net"type="checkbox"class="input-checkbox"/>Surfing the net</label>
+            <label><input name="prefer"value="others"type="checkbox"class="input-checkbox"/>Others</label>
+            
+          </div>
+      
+          <div class="form-group">
+            <p>Seen any good websites lately? write them down.</p>
+            <textarea id="comments"class="input-textarea"name="comment"placeholder="Enter your comment here..."></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      
+    
+</body>
+</html>
